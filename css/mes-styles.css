@@ -1,0 +1,84 @@
+﻿* {
+	box-sizing: border-box;
+  }
+/* Styles pour le header */
+.header {
+	background-color: #4757a9; /* Couleur de fond */
+	padding: 21px; /* Espace intérieur autour des liens */
+	text-align: left; /* Le texte à gauche horizontalement */
+  }
+  
+  .header a {
+	text-decoration: none; /* Supprimer les soulignements des liens */
+	color: #fff; /* Couleur du texte des liens */
+	margin: 10px; /* Marge entre les liens */
+	font-size: 18px; /* Taille de police des liens */
+	transition: color 0.3s ease; /* Animation de transition de couleur au survol */
+  }
+  
+  .header a:hover {
+	color: #e72656; /* Couleur du texte au survol */
+  }
+  
+  html, body {
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+  }
+  
+  img {
+	width: 100%;
+	transition: transform 0.3s ease; /* Ajout d'une animation de transition pour les images */
+  }
+  
+  .conteneur {
+	padding: 0.8vw;
+	margin-top: -0.8vw;
+  }
+  
+  .texte {
+	font-size: 17px;
+  }
+  
+  .coulFond {
+	color: #fff;
+	background-color: #e72656;
+	margin-top: 0.8vw;
+  }
+  
+  .margeHaut {
+	margin-top: 16px;
+  }
+  
+  .calqueImg {
+	padding: 0 8px;
+	width: 100%;
+	transition: transform 0.3s ease; /* Ajout d'une animation de transition pour les cartes */
+  }
+  
+  .carte {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	overflow: hidden; /* Cache le contenu des cartes pour l'effet d'animation */
+  }
+  
+  /* Ajout d'une animation de zoom sur les images au survol */
+  .calqueImg:hover img {
+	transform: scale(1.05);
+  }
+  
+  /* Ajout d'une animation de zoom sur les cartes au survol */
+  .calqueImg:hover .carte {
+	transform: scale(1.05);
+  }
+  
+  @media (min-width: 600px) {
+	.calqueImg {
+	  width: 33.33333%;
+	  float: left;
+	}
+  
+	.texte {
+	  font-size: 1.2vw;
+	}
+  }
+  
