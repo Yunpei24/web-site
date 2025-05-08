@@ -269,12 +269,17 @@ img {
 .card-image {
     position: relative;
     overflow: hidden;
+    padding-top: 75%; /* Ratio 4:3 pour maintenir une hauteur uniforme */
 }
 
 .card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: contain; /* Changé de 'cover' à 'contain' pour éviter de couper les images */
+    background-color: #f5f5f5; /* Couleur de fond légère pour les zones sans image */
     transition: transform 0.5s ease;
 }
 
